@@ -1,0 +1,25 @@
+body {
+    margin: 0 1em;
+    background: gray;
+}
+
+h1 {
+    font-face: sans-serif;
+    text-align: center;
+}
+
+#ol_tabs {
+    list-style-type: none;
+    padding: 0;
+    margin: 1em;
+}
+
+#ol_tabs > * {
+    display: inline-block;
+    padding: 0;
+    margin: 1em;
+}
+
+#ol_tabs > * > img {
+    width: 4em;
+}
