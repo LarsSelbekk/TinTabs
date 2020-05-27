@@ -1,0 +1,9 @@
+# emacs-temp
+*~
+# JetBrains
+.idea/
+*.iml
+# Compiled
+out
+bin
+target
