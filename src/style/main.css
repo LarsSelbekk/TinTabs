@@ -1,10 +1,17 @@
+@font-face {
+    font-family: TinWhistleTab;
+    src: url("../assets/fonts/TinWhistleTab.ttf");
+}
+
 body {
-    margin: 0 1em;
-    background: gray;
+    background: white;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
 }
 
 h1 {
-    font-face: sans-serif;
     text-align: center;
 }
 
@@ -22,4 +29,59 @@ h1 {
 
 #ol_tabs > * > img {
     width: 4em;
+}
+
+.tab {
+    font-family: TinWhistleTab, fantasy;
+    font-size: 4em;
+}
+
+#tabs {
+    /*margin: 5%;*/
+    padding: 0;
+    font-family: TinWhistleTab, fantasy;
+    font-size: 15em;
+    height: 75vh;
+    width: 100%;
+    border: none;
+    user-focus: none;
+    box-shadow: gray 0 0 0.04em 0.005em;
+}
+
+label {
+    display: block;
+    margin: 0.25em;
+    font-size: 2em;
+}
+
+.fill {
+    width: 100vw;
+    overflow: no-content;
+}
+
+#cheatContainer {
+    text-align: center;
+    width: 90%;
+    margin: 1em 5%;
+}
+
+.hidden {
+    display: none!important;
+}
+
+#dropCheatSheet {
+    border: none;
+    background: bisque;
+    border-radius: 1em;
+    padding: 1em;
+    user-focus: none;
+    -moz-user-focus: ignore;
+    -webkit-user-select: none;
+    display: block;
+}
+
+#cheatsheet {
+    width: 40em;
+    max-width: 100%;
+    margin: 0;
 }
