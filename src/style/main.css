@@ -13,56 +13,30 @@ body {
 
 h1 {
     text-align: center;
-}
-
-#ol_tabs {
-    list-style-type: none;
-    padding: 0;
-    margin: 1em;
-}
-
-#ol_tabs > * {
-    display: inline-block;
-    padding: 0;
-    margin: 1em;
-}
-
-#ol_tabs > * > img {
-    width: 4em;
-}
-
-.tab {
-    font-family: TinWhistleTab, fantasy;
-    font-size: 4em;
+    font-size: 2em;
+    max-width: 90vw;
+    margin: 0.4em auto;
 }
 
 #tabs {
-    /*margin: 5%;*/
+    margin: 1%;
     padding: 0;
     font-family: TinWhistleTab, fantasy;
-    font-size: 15em;
-    height: 75vh;
-    width: 100%;
+    font-size: 6em;
+    min-height: 80vh;
+    width: 98%;
     border: none;
     user-focus: none;
-    box-shadow: gray 0 0 0.04em 0.005em;
-}
-
-label {
-    display: block;
-    margin: 0.25em;
-    font-size: 2em;
-}
-
-.fill {
-    width: 100vw;
     overflow: no-content;
+    display: block;
+    word-wrap: break-word;
 }
 
 #cheatContainer {
     text-align: center;
     width: 90%;
     margin: 1em 5%;
+    grid-area: cheat;
 }
 
 .hidden {
@@ -78,10 +52,35 @@ label {
     -moz-user-focus: ignore;
     -webkit-user-select: none;
     display: block;
+    margin: 0 auto;
 }
 
 #cheatsheet {
-    width: 40em;
-    max-width: 100%;
-    margin: 0;
+    width: 100%;
+    max-width: 60em;
+    margin: 0 auto;
+    display: block;
+}
+
+#copyright {
+    width: 100vw;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 0.7em;
+    color: dimgray;
+    margin: 0.2em auto;
+}
+
+#tabs[placeholder]:empty::before {
+    content: attr(placeholder);
+    color: #555;
+    font-family: sans-serif;
+    font-size: 0.4em;
+    vertical-align: text-top;
+}
+
+#tabs[placeholder]:empty:focus::before {
+    font-family: sans-serif;
+    font-size: 0.4em;
+    vertical-align: text-top;
 }
