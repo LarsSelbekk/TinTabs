@@ -30,6 +30,13 @@ h1 {
     overflow: no-content;
     display: block;
     word-wrap: break-word;
+    text-decoration: none;
+    color: black;
+}
+
+#tabs a {
+    color: initial;
+    text-decoration: initial;
 }
 
 #cheatContainer {
@@ -40,7 +47,7 @@ h1 {
 }
 
 .hidden {
-    display: none!important;
+    display: none !important;
 }
 
 #dropCheatSheet {
