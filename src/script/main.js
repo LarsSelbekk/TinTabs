@@ -3,12 +3,11 @@ const dropCheatSheet = document.getElementById("dropCheatSheet");
 const cheatsheet = document.getElementById("cheatsheet");
 const tabs = document.getElementById("tabs");
 
-const lastNoteKeyStandIn = "K";
-const lastNoteKey = "\u00ce";
+// const lastNoteKeyStandIn = "K";
 
 const allowedNotes = [
     "d", "i", "e", "j", "f", "g", "h", "a", "n", "b", "m", ",", "c", " ", "Enter",
-    "D", "I", "E", "J", "F", "G", "H", "A", "N", "B", "M", "C", lastNoteKeyStandIn
+    "D", "I", "E", "J", "F", "G", "H", "A", "N", "B", "M", "C", "K"
 ];
 
 dropCheatSheet.addEventListener("click", toggleCheatSheet);
@@ -24,9 +23,6 @@ tabs.addEventListener("keypress", e => {
     const key = e.key;
     if (allowedNotes.indexOf(key) < 0) {
         e.preventDefault();
-    }
-    else if (key === lastNoteKeyStandIn) {
-        interceptKey(e, lastNoteKey);
     }
 });
 
