@@ -68,6 +68,11 @@ tabs.addEventListener("input", e => {
     // const k = document.createElement("span");
     // k.innerText = stringify_object(e);
     // document.body.appendChild(k);
+    // console.log(e);
+    // alert(stringify_object(e));
+    const k = document.createElement("span");
+    k.innerText = stringify_object(e);
+    document.body.appendChild(k);
     // cleanNoteStringSegment(target, 0, target.textContent.length);
     switch (inputType) {
         case "insertFromDrop":
